@@ -1,6 +1,3 @@
-import 'package:meta/meta.dart';
-
-@immutable
 abstract class DataState {}
 
 class Initial extends DataState {}
