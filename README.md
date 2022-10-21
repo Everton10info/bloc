@@ -1,5 +1,5 @@
 
-# Flutter Bloc
+# :page_with_curl: Flutter Bloc
 
 ## Coleção de aplicavitos Flutter, exemplos documentados usando Bloc (gerenciador de estado).
 
