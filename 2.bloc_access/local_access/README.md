@@ -1,7 +1,7 @@
 ## Acesso local
 Neste exemplo, usaremos **BlocProvider** para disponibilizar um bloc para uma subárvore local. Nesse contexto, local significa dentro de um contexto em que não há rotas sendo empurradas/populadas.
 
-##:pushpin: Bloc
+## :pushpin: Bloc
 Por uma questão de simplicidade, vamos usar a Counter como nosso aplicativo de exemplo.
 
 Nossa **CounterBloc** implementação ficará assim:
@@ -37,3 +37,5 @@ BlocProvider.of<CounterBloc>(context)
 
  O widget [CounterPage](/2.bloc_access/local_access/lib/counter_page.dart)  é um StatelessWidget que acessa o [CounterBloc](/2.bloc_access/local_access/lib/bloc/counter_bloc.dart) arquivo **BuildContext**.
  Nosso **CounterText** está usando a **BlocBuilder** para se reconstruir sempre que o estado [CounterBloc](/2.bloc_access/local_access/lib/bloc/counter_bloc.dart)  muda. Usamos ``BlocProvider.of<CounterBloc>(context)`` para acessar o fornecido [CounterBloc](/2.bloc_access/local_access/lib/bloc/counter_bloc.dart) e retornar um **Textwidget** com a contagem atual.
+
+ [Documnetação oficial](https://bloclibrary.dev/#/recipesflutterblocaccess?id=local-access)
