@@ -1,4 +1,4 @@
-##:ship: Navigation 2.0
+## :ship: Navigation 2.0
 
 Neste exemplo, veremos como usar a API de páginas do Navigator 2.0 para lidar com roteamento em resposta a mudanças de estado em um bloc.
 
