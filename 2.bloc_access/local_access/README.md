@@ -1,4 +1,4 @@
-## Acesso local
+## Bloc Access
 Neste exemplo, usaremos **BlocProvider** para disponibilizar um bloc para uma subárvore local. Nesse contexto, local significa dentro de um contexto em que não há rotas sendo empurradas/populadas.
 
 ## :pushpin: Bloc
@@ -7,12 +7,6 @@ Por uma questão de simplicidade, vamos usar a Counter como nosso aplicativo de 
 Nossa **CounterBloc** implementação ficará assim:
 
 ``` dart 
-abstract class CounterEvent {}
-
-class CounterIncrementPressed extends CounterEvent {}
-
-class CounterDecrementPressed extends CounterEvent {}
-
 class CounterBloc extends Bloc<CounterEvent, int> {
   CounterBloc() : super(0) {
     on<CounterIncrementPressed>((event, emit) => emit(state + 1));
