@@ -1,16 +1,22 @@
-# naviagation_2_0
+##:ship: Navigation 2.0
 
-A new Flutter project.
+Neste exemplo, veremos como usar a API de páginas do Navigator 2.0 para lidar com roteamento em resposta a mudanças de estado em um bloc.
 
-## Getting Started
+**Observação**: vamos usar package: [flow_builder](https://pub.dev/packages/flow_builder) para simplificar o trabalho com a API do Navigator 2.0.
 
-This project is a starting point for a Flutter application.
+## :pushpin: Bloc
+Para mostrar as vantagens do Navigator, vamos construir um exemplo um pouco mais complexo. Vamos construir o [BookBloc](/1.navigation/naviagation_2_0/lib/bloc/book_bloc.dart) que os levará [BookEvent](/1.navigation/naviagation_2_0/lib/bloc/book_event.dart) se os converterá em [BookStates](/1.navigation/naviagation_2_0/lib/bloc/book_state.dart).
 
-A few resources to get you started if this is your first Flutter project:
+## :pushpin:  BookEvent
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+[BookEvent](/1.navigation/naviagation_2_0/lib/bloc/book_event.dart) responderá a dois eventos: selecionar um livro e desmarcar um livro.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## :pushpin:  BookState
+[BookStates](/1.navigation/naviagation_2_0/lib/bloc/book_state.dart) conterá a lista de livros e um livro opcional selecionado se o usuário tocar em um livro.
+## :pushpin:  Bloco de Livros
+[BookBloc](/1.navigation/naviagation_2_0/lib/bloc/book_bloc.dart)  lidará com a resposta a cada um [BookEvent](/1.navigation/naviagation_2_0/lib/bloc/book_event.dart)  emitirá a [BookStates](/1.navigation/naviagation_2_0/lib/bloc/book_state.dart) resposta apropriada:
+## :pushpin: Camada de UI
+
+Agora vamos conectar o bloco à nossa interface do usuário usando [FlowBuilder](https://pub.dev/packages/flow_builder)!
+
+[Documentação oficial](https://bloclibrary.dev/#/recipesflutternavigation?id=navigation-20)
